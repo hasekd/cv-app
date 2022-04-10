@@ -1,0 +1,63 @@
+.card {
+  width: 35rem;
+  height: 50%;
+  background-color: white;
+  color: #00afc1;
+  font-weight: bold;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 20px 0px;
+}
+
+.card label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.name input {
+  width: 100%;
+}
+
+.email {
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  height: 3rem;
+}
+
+.inputs {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid rgb(0, 175, 193, 0.3);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+*:focus {
+  outline: none;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button button:hover {
+  transform: scale(1.05);
+}
+
+.card button {
+  padding: 0.8rem;
+  width: 20%;
+  border-radius: 20px;
+  border: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: #00afc1;
+  font-weight: bold;
+  font-size: 1rem;
+}

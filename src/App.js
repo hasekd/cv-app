@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import NavigationBar from "./components/Navigation";
+import classes from "./App.module.css";
+import AboutPage from "./components/About";
+import ContactPage from "./components/Contact";
+import NavigationSmall from "./components/Navigation/NavigationSmall";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div id="home" className={classes["nav-section"]}>
+        <NavigationBar />
+      </div>
+      <div id="about" className={classes["about-section"]}>
+        <AboutPage />
+        <div className={classes.navigation}>
+          <NavigationSmall />
+        </div>
+      </div>
+      <div id="contact" className={classes["contact-section"]}>
+        <ContactPage />
+        <div className={classes.navigation}>
+          <NavigationSmall />
+        </div>
+      </div>
+    </>
   );
 }
 

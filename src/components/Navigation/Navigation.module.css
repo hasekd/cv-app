@@ -1,0 +1,57 @@
+.square {
+  width: 31.25rem;
+  height: 31.25rem;
+  transform: rotate(45deg);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.square-link {
+  border: 1rem solid #00afc1;
+}
+
+.square-link a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #00afc1;
+  font-size: 8rem;
+  font-weight: 600;
+}
+
+.square-link a span {
+  transform: rotate(-45deg);
+}
+
+.square-link1 {
+  border-left: none;
+  border-top: none;
+}
+
+.square-link2 {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+.square-link3 {
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.square-link4 {
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.hover-text {
+  font-size: 2.5rem;
+  display: block;
+}
